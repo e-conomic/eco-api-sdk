@@ -5,7 +5,7 @@ This SDK is intended to make it easier to use the SOAP API made available by e-c
 ## THIS SDK IS DEPRECATED 
 #### NB: SOAP IS NOT DEPRECATED - ONLY THE SDK.
 
-The current release (v1.4.20) which is released on Sep 17th 2015 is the last release of the SDK. From this date the SDK has been deprecated and we no longer advise the use of this SDK. We will no longer fix bugs in this SDK. If you encounter bugs or want new functionality, we refer you to use our SOAP API directly or take a look at our REST API.
+The current release (v1.4.21) which is released on Nov 8th 2015 is the last release of the SDK. From this date the SDK has been deprecated and we no longer advise the use of this SDK. We will no longer fix bugs in this SDK. If you encounter bugs or want new functionality, we refer you to use our SOAP API directly or take a look at our REST API.
 
 This last release includes some bugfixes and minor improvements. So if you do use this API today, we strongly urge you to upgrade to this version.
 

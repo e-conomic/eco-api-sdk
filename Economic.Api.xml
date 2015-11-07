@@ -537,6 +537,9 @@
         <member name="M:Economic.Api.EconomicSession.GetApiInformation">
             <summary>Gets information about the e-conomic API.</summary><returns>The information.</returns>
         </member>
+        <member name="M:Economic.Api.EconomicSession.VerifyXEconomicAppIdentifier">
+            <summary>Verify that the X-EconomicAppIdentifier header is sent correctly.</summary><returns>True if the identifier passes our criteria and throws an exception if it doesn't.</returns>
+        </member>
         <member name="P:Economic.Api.EconomicSession.ExtendedVatZone">
             <summary>Contains utility methods for extended VAT zones.</summary><seealso cref="T:Economic.Api.IExtendedVatZone"/>
         </member>
@@ -10310,6 +10313,9 @@
         </member>
         <member name="M:Economic.Api.CompanyUtil.Get">
             <summary>Returns the Company.</summary><returns>An entity of the company </returns>
+        </member>
+        <member name="M:Economic.Api.CompanyUtil.GetAffiliation">
+            <summary>Returns the company affiliation.</summary><returns>A string with the company affiliation (Reviso, e-conomic or Developer).</returns>
         </member>
         <member name="T:Economic.Api.CostTypeUtil">
             <summary>Contains utility methods for cost types.</summary><seealso cref="T:Economic.Api.ICostType"/>
