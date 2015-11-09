@@ -1,7 +1,4 @@
 # e-conomic .Net SDK
-
-This SDK is intended to make it easier to use the SOAP API made available by e-conomic to integration partners.
-
 ## THIS SDK IS DEPRECATED 
 #### NB: SOAP IS NOT DEPRECATED - ONLY THE SDK.
 
