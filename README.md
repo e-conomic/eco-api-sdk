@@ -1,5 +1,5 @@
 # e-conomic .Net SDK
-## THIS SDK IS DEPRECATED AND UNSUPPORTED. WE ADVICE AGAINST USING IT. PLEASE SWITCH TO SOAP DIRECTLY OR OUR REST API.
+## THIS SDK IS DEPRECATED AND UNSUPPORTED. WE ADVISE AGAINST USING IT. PLEASE SWITCH TO SOAP DIRECTLY OR OUR REST API.
 #### NB: SOAP IS NOT DEPRECATED - ONLY THE SDK.
 
 The current release (v1.4.22) which was released on Nov 16th 2015 was the last release of the SDK. From this date the SDK has been deprecated and we do not advise the use of this SDK. We will no longer fix bugs in this SDK. If you encounter bugs or want new functionality, we refer you to use our SOAP API directly or take a look at our REST API.
@@ -16,6 +16,8 @@ string myIdentifier = "MyCoolIntegration/1.1 (http://example.com/MyCoolIntegrati
 var webservice = new EconomicSession(myIdentifier);
 ```
 
+In February 2018 the SOAP API will cease support of Connect() and authentication must instead be done using ConnectWithToken. You can read more about tokens here: https://www.e-conomic.com/developer/connect
+
 ### Alternatives to this SDK
 
 You can find more developer resources at http://www.e-conomic.com/developer
@@ -31,6 +33,6 @@ using (var operationScope = new OperationContextScope(session.InnerChannel))
     requestMessage.Headers["X-EconomicAppIdentifier"] = "MyCoolIntegration/1.1 (http://example.com/MyCoolIntegration/; MyCoolIntegration@example.com) BasedOnSuperLib/1.4";
     OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] = requestMessage;
 
-    session.Connect(<agreement>, <user>, <password>);
+    session.ConnectWithToken(<token>, <appToken>);
 }
 ```
